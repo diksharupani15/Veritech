@@ -1,0 +1,110 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team-member {
+    width: 150px    ;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin-top: 10px;
+    color: #333;
+}
+.team-member p {
+    margin-top: 5px;
+    color: #666;
+    font-size: 14px;
+}
+.team-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.team-title .button {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+.team-title .button:hover {
+    background-color: #671d9c;
+}
+.header {
+    background-color: #f4f4f4ff; /* Lighter shade of pink */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .company-name {
+    color: #101013; /* Darker text for contrast */
+    padding: 0px 25%;
+    text-decoration:underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+}
+.header h1 {
+    background-color: #8a2be2; /* Primary pink color */
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header h1:hover {
+    background-color: #671d9c; /* Darker shade of pink */
+}
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+    .team-member {
+        width: 100%;
+    }
+}
